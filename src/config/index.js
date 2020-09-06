@@ -1,10 +1,10 @@
 module.exports = {
 
-    author: "@konstantinmuenster",
-    siteTitle: "Gatsby Starter Portfolio Minimal",
-    siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
-    siteDescription: "A modern one-page portfolio with a clean yet expressive design.",
-    siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    author: "Nick Bryant",
+    siteTitle: "Interesting Engineer",
+    siteShortTitle: "Nick Bryant", // Used as logo text in header, footer, and splash screen
+    siteDescription: "Your one stop shop for high end web development.",
+    siteUrl: "https://interesting.engineer",
     siteLanguage: "en_US",
     siteIcon: "src/content/favicon.png", // Relative to gatsby-config file
 
@@ -20,30 +20,18 @@ module.exports = {
     socialMedia: [
         {
             name: "Linkedin",
-            url: "https://www.linkedin.com/in/konstantin-muenster/"
-        },
-        {
-            name: "Medium",
-            url: "https://medium.com/@konstantin.muenster"
+            url: "https://www.linkedin.com/in/nickbryant123/"
         },
         {
             name: "Github",
-            url: "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal"
-        },
-        {
-            name: "Behance",
-            url: "https://www.behance.net/konstanmnster"
+            url: "https://github.com/sbryant31"
         },
     ],
 
     navLinks: {
         menu: [
             {
-                name: "Articles",
-                url: "/#articles",
-            },
-            {
-                name: "About Nick",
+                name: "About",
                 url: "/#about",
             },
         ],
