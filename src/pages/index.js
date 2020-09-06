@@ -5,10 +5,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/sections/hero"
-import Articles from "../components/sections/articles" 
+import Articles from "../components/sections/articles"
 import About from "../components/sections/about"
-import Interests from "../components/sections/interests"
-import Projects from "../components/sections/projects"
 import Contact from "../components/sections/contact"
 import { splashScreen } from "../config"
 
@@ -19,8 +17,6 @@ const IndexPage = ({ data }) => (
     {/* Articles is populated via Medium RSS Feed fetch */}
     <Articles />
     <About content={data.about.edges} />
-    <Interests content={data.interests.edges} />
-    <Projects content={data.projects.edges} />
     <Contact content={data.contact.edges} />
   </Layout>
 )
@@ -66,54 +62,6 @@ export const pageQuery = graphql`
               }
             }
           }
-        }
-      }
-    }
-  }
-  interests: allMdx(filter: {fileAbsolutePath: {regex: "/interests/"}}) {
-    edges {
-      node {
-        exports {
-          shownItems
-          interests {
-            name
-            icon {
-              childImageSharp {
-                fixed(width: 20, height: 20, quality: 90) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-        frontmatter {
-          title
-        }
-      }
-    }
-  }
-  projects: allMdx(filter: {fileAbsolutePath: {regex: "/projects/"}, frontmatter: {visible: {eq: "true"}}}, sort: {fields: [frontmatter___position], order: ASC}) {
-    edges {
-      node {
-        body
-        frontmatter {
-          title
-          category
-          emoji
-          external
-          github
-          screenshot {
-            childImageSharp {
-              fluid(maxWidth: 400, quality: 90) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          tags
-          position
-          buttonVisible
-          buttonUrl
-          buttonText
         }
       }
     }

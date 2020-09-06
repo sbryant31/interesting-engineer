@@ -14,8 +14,8 @@ module.exports = {
     // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
     mediumRssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantin.muenster",
     shownArticles: 3,
-    
-    // There are icons available for the following platforms: 
+
+    // There are icons available for the following platforms:
     // Medium, GitHub, LinkedIn, XING, Behance
     socialMedia: [
         {
@@ -35,7 +35,7 @@ module.exports = {
             url: "https://www.behance.net/konstanmnster"
         },
     ],
-  
+
     navLinks: {
         menu: [
             {
@@ -43,12 +43,8 @@ module.exports = {
                 url: "/#articles",
             },
             {
-                name: "About Me",
+                name: "About Nick",
                 url: "/#about",
-            },
-            {
-                name: "Features",
-                url: "/#projects",
             },
         ],
         button: {
@@ -58,13 +54,5 @@ module.exports = {
     },
 
     footerLinks: [
-        {
-            name: "Privacy",
-            url: "/privacy"
-        },
-        {
-            name: "Imprint",
-            url: "/imprint"
-        }
     ]
 }
