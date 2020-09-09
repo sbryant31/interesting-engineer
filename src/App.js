@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Helmet from 'react-helmet'
 
