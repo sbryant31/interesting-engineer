@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Helmet from 'react-helmet'
 
 // pallette
 // https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
@@ -48,6 +49,11 @@ const classes = {
 function App() {
   return (
     <div style={classes.container}>
+			<Helmet>
+					<meta charSet="utf-8" />
+					<title>Interesting Engineer</title>
+					<link rel="canonical" href="interesting.engineer" />
+			</Helmet>
       <h1 style={classes.header}>Nick Bryant</h1>
       <h3 style={classes.subtitle}>Interesting Engineer.</h3>
       <div style={classes.body}>
