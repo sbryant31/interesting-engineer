@@ -34,6 +34,10 @@ const classes = {
     fontSize: '5vw',
     color: "#f4a261"
   },
+  list: {
+    fontSize: '1.5vw',
+    color: '#f4a261',
+  },
   body: {
     display: 'flex',
     flexDirection: 'column',
@@ -61,6 +65,13 @@ function App() {
             <span> </span>
             <a style={classes.link} href="mailto:nick@interesting.engineer">nick@interesting.engineer</a>
         </p>
+        <ul style={classes.list}>
+          <li>Blockchain - Ethereum & Bitcoin</li>
+          <li>Startup CTO / MVP launches</li>
+          <li>Business Automation / API Integration</li>
+          <li>Machine learning / AI</li>
+          <li>Hiring & leading dev teams</li>
+        </ul>
       </div>
     </div>
   );
