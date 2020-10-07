@@ -36,7 +36,7 @@ const classes = {
   },
   list: {
     fontSize: '1.5vw',
-    color: '#f4a261',
+    color: '#e9c46a',
   },
   body: {
     display: 'flex',
@@ -60,11 +60,6 @@ function App() {
       <h1 style={classes.header}>Nick Bryant</h1>
       <h3 style={classes.subtitle}>Interesting Engineer.</h3>
       <div style={classes.body}>
-        <p>Building incredible web apps since 2002.</p>
-        <p>Need it built yesterday? email
-            <span> </span>
-            <a style={classes.link} href="mailto:nick@interesting.engineer">nick@interesting.engineer</a>
-        </p>
         <ul style={classes.list}>
           <li>Blockchain - Ethereum & Bitcoin</li>
           <li>Startup CTO / MVP launches</li>
@@ -72,6 +67,7 @@ function App() {
           <li>Machine learning / AI</li>
           <li>Hiring & leading dev teams</li>
         </ul>
+        <p><a style={classes.link} href="mailto:nick@interesting.engineer">Email</a> - <a style={classes.link} href="https://linkedin.com/in/nickbryant123">Linkedin</a> - <a style={classes.link} href="https://github.com/sbryant31">Github</a></p>
       </div>
     </div>
   );
